@@ -1,0 +1,49 @@
+{
+  "settings": {
+    "locale": "en-us",
+    "showMenu": true,
+    "enableAdvanced": true,
+    "enableHistorical": true
+  },
+  "launcherVersion": {
+    "name": "2.0.1051",
+    "format": 21,
+    "profilesFormat": 2
+  },
+  "clientToken": "f307fd7f8a23d7d2e38fed7738413d21",
+  "profiles": {
+    "52c39f2faa9b40c565e33c6db8e318b9": {
+      "type": "latest-release",
+      "lastUsed": "2018-05-15T06:56:08.182Z"
+    },
+    "04b13ac215e8cee7ac4f7ce79c32fa19": {
+      "type": "latest-snapshot",
+      "lastUsed": "1970-01-01T00:00:00.000Z"
+    },
+    "forge": {
+      "name": "forge",
+      "type": "custom",
+      "created": "2018-05-15T07:10:19.379Z",
+      "lastUsed": "2018-05-18T11:34:17.682Z",
+      "lastVersionId": "1.12.2-forge1.12.2-14.23.2.2611",
+      "javaArgs": "-Xmx4G -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M"
+    }
+  },
+  "analyticsFailcount": 0,
+  "analyticsToken": "cc273640cae62b5174021f5f988f9d3a",
+  "authenticationDatabase": {
+    "e6360c11a8c343d599788ede1bdb5e41": {
+      "accessToken": "4b3a8e2b90d842f3bc2cc181f742d39c",
+      "username": "cgpitt@gmail.com",
+      "profiles": {
+        "91e07986fb264f1e996f65a3fdc17693": {
+          "displayName": "assertchris"
+        }
+      }
+    }
+  },
+  "selectedUser": {
+    "account": "e6360c11a8c343d599788ede1bdb5e41",
+    "profile": "91e07986fb264f1e996f65a3fdc17693"
+  }
+}
