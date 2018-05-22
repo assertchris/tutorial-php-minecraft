@@ -6,11 +6,11 @@ These are the slides and the code for my #SCD18 talk.
 
 1. Buy and download a legal version of Minecraft.
 2. Copy the contents of `minecraft-client` to your `Application Support` or `%appdata%` Minecraft folder. It's ok to overwrite the contents there - there's nothing reinstalling that legal version of Minecraft can't fix, if anything is messed up.
-3. Launch Minecraft, and run the "forge" version.
+3. Launch the Minecraft client, and run the "forge" version.
 4. Make sure the Sphax PureBDCraft and "slides" resource packs are enabled.
 5. Launch the "forge" minecraft server, found in `minecraft-server`. You can launch it with `java -Xmx2024M -Xms2024M -jar forge-1.12.2-14.23.2.2611-universal.jar`.
 6. Wait until the server has finished loading, and you see the "RCON" listening/connected log message.
-7. Launch the PHP daemon, found in `php-daemon`. You can launch it with `php index.php`.
+7. Launch the PHP daemon, found in `php-daemon`. You can launch it with `php index.php`. You should use PHP v7.2. This has not been tested on older versions.
 
 > The PHP daemon will attempt to connect to the dedicated "forge" server. If it can't connect, you will see an ugly error message. Some commands also depend on a running Shopware v5.4.* application, running at `http://127.0.0.1:8080`. If that is not set up correctly, some of the custom commands will fail.
 
