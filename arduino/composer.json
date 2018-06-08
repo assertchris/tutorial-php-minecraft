@@ -1,0 +1,5 @@
+{
+    "require": {
+        "carica/firmata": "^1.0"
+    }
+}
