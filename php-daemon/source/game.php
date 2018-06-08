@@ -6,7 +6,7 @@ class Game
     private $shopware;
     private $filesystem;
 
-    private $log = "/Users/assertchris/Desktop/shopware/server/logs/latest.log";
+    private $log = "/Users/assertchris/Desktop/shopware/minecraft-server/logs/latest.log";
 
     private $grid = [
         [-337, 64, 444], [-336, 64, 444], [-335, 64, 444], [-334, 64, 444], [-333, 64, 444],
@@ -54,14 +54,14 @@ class Game
             }");
         }
 
-        Amp\run(function() {
-            Amp\repeat(function() {
+        Amp\run(function () {
+            Amp\repeat(function () {
                 /* yield from */ $this->repeatGridSearch();
             }, 1000 * 1 * 1);
 
             $this->timestamp = yield $this->filesystem->mtime($this->log);
 
-            Amp\repeat(function() {
+            Amp\repeat(function () {
                 yield from $this->repeatLogWatch();
             }, 500);
         });
@@ -113,7 +113,8 @@ class Game
         }
     }
 
-    private function getContents($then) {
+    private function getContents($then)
+    {
         $now = yield $this->filesystem->mtime($this->log);
     
         if ((string) $then !== (string) $now) {
@@ -130,7 +131,8 @@ class Game
         return null;
     }
 
-    private function executeCommand($raw) {
+    private function executeCommand($raw)
+    {
         preg_match("/<(\w+)>/", $raw, $matches);
     
         $user = null;
@@ -157,7 +159,7 @@ class Game
             $this->builder->exec("/setblock -344 64 514 air");
             $this->builder->exec("/setblock -344 65 514 air");
 
-            Amp\once(function() {
+            Amp\once(function () {
                 $this->builder->exec("/setblock -344 64 515 iron_bars");
                 $this->builder->exec("/setblock -344 65 515 iron_bars");
                 $this->builder->exec("/setblock -344 64 514 iron_bars");
