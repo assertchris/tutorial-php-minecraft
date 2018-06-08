@@ -1,6 +1,6 @@
 # Looking for code in all the wrong places
 
-These are the slides and the code for my #SCD18 talk. 
+These are the slides and the code for my #SCD18 and #DPC18 talks. 
 
 ## Getting started
 
